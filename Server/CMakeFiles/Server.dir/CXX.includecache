@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/bumrang/enetChat/Server/main.cpp
+iostream
+-
+stdio.h
+-
+cstring
+-
+enet/enet.h
+-
+
