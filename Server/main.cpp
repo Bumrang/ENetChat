@@ -82,7 +82,7 @@ while (Online = true)
         
         if (NewUser == true)
         {
-			  Welcome = "\e[1;31mWelcome to the server, "; strcpy(Welcome[Welcome.length()], (const char*)event.packet->data); strcpy(Welcome[Welcome.length()], "\e[0m"); 
+			  Welcome = "\e[1;31mWelcome to the server, "; Welcome += event.packet->data; Welcome += "\e[0m"; 
 			
 			ENetPacket * packet = enet_packet_create (Welcome.c_str(), Welcome.length(), ENET_PACKET_FLAG_RELIABLE);
 			enet_peer_send (event.peer , 0 , packet);
